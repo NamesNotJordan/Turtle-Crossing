@@ -15,20 +15,13 @@ scorenoard = Scoreboard()
 cm = CarManager()
 
 #Key Listeners
-screen.onkey(player.go_up,"w")
-screen.onkey(player.go_up,"up")
-
-screen.onkey(player.go_back,"s")
-screen.onkey(player.go_back,"down")
-
-screen.onkey(player.go_left,"a")
-screen.onkey(player.go_left,"left")
-
-screen.onkey(player.go_right,"d")
-screen.onkey(player.go_right,"right")
+screen.listen()
+screen.onkey(player.go_up,"Up")
 
 
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+
+    cm.create_car
