@@ -24,4 +24,5 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
 
-    cm.create_car
+    cm.create_car()
+    cm.move_cars()
